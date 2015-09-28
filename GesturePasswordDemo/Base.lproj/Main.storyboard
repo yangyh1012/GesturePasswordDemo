@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-H8-lR0">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="6wQ-Cx-KyU"/>
+                                    <constraint firstAttribute="height" constant="30" id="dXr-rJ-2qG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="进入">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pLa-NN-w8p" kind="show" id="ryl-qQ-6QX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="vaR-H8-lR0" secondAttribute="centerY" id="U1r-Xa-IYK"/>
+                            <constraint firstAttribute="centerX" secondItem="vaR-H8-lR0" secondAttribute="centerX" id="kui-0O-QOI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Gesture Password View Controller-->
+        <scene sceneID="XLD-Zj-bds">
+            <objects>
+                <viewController id="pLa-NN-w8p" customClass="GesturePasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xfe-dt-CW8"/>
+                        <viewControllerLayoutGuide type="bottom" id="LBp-WX-T2o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dBp-pE-B4e" userLabel="gesturePasswordMainView" customClass="GesturePasswordMainView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lT-C8-76B" userLabel="gesturePasswordBackView">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42h-1R-UoX" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="q4Q-gb-8XV"/>
+                                            <constraint firstAttribute="height" constant="70" id="tOu-ko-fiu"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-0q-MGM" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="125" y="0.0" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="WGQ-9G-ivO"/>
+                                            <constraint firstAttribute="height" constant="70" id="YCC-Zb-vdi"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEK-fA-25c" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="250" y="0.0" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Ymt-tf-NEF"/>
+                                            <constraint firstAttribute="width" constant="70" id="b9e-GS-CGz"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bV-nj-C5I" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="0.0" y="125" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="CwH-rY-BAF"/>
+                                            <constraint firstAttribute="height" constant="70" id="kZR-1k-7or"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-Dt-6Bg" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="125" y="125" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="gcr-K9-PYz"/>
+                                            <constraint firstAttribute="width" constant="70" id="xQW-8j-EkV"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnj-Ej-xO2" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="250" y="125" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="4xN-yp-f2d"/>
+                                            <constraint firstAttribute="width" constant="70" id="cx0-B0-fYB"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-SN-p57" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="0.0" y="250" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Kel-0Y-Zek"/>
+                                            <constraint firstAttribute="height" constant="70" id="ZoG-uA-kXX"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-Cw-hni" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="125" y="250" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="ENL-Qy-cxV"/>
+                                            <constraint firstAttribute="height" constant="70" id="LQ9-P8-nVt"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKH-Hs-PJk" customClass="GesturePasswordButton">
+                                        <rect key="frame" x="250" y="250" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="3sD-CJ-Kfp"/>
+                                            <constraint firstAttribute="height" constant="70" id="Eul-Ad-enK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-pY-otB" userLabel="gesturePasswordForeView" customClass="GesturePasswordForeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UEA-Cw-hni" secondAttribute="bottom" id="2x4-Yp-Opy"/>
+                                    <constraint firstAttribute="height" constant="320" id="54A-Xm-JwE"/>
+                                    <constraint firstAttribute="centerY" secondItem="ocG-Dt-6Bg" secondAttribute="centerY" id="89z-1e-Pdw"/>
+                                    <constraint firstAttribute="bottom" secondItem="uKH-Hs-PJk" secondAttribute="bottom" id="9G0-T0-OQZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="UEA-Cw-hni" secondAttribute="centerX" id="AgT-fO-vos"/>
+                                    <constraint firstAttribute="centerY" secondItem="3bV-nj-C5I" secondAttribute="centerY" id="BjT-6L-iOw"/>
+                                    <constraint firstAttribute="trailing" secondItem="dnj-Ej-xO2" secondAttribute="trailing" id="By7-N0-its"/>
+                                    <constraint firstAttribute="bottom" secondItem="y3A-pY-otB" secondAttribute="bottom" id="DzX-TL-0fI"/>
+                                    <constraint firstAttribute="width" constant="320" id="FHJ-tB-wTI"/>
+                                    <constraint firstItem="yEK-fA-25c" firstAttribute="top" secondItem="4lT-C8-76B" secondAttribute="top" id="K0q-n3-yZR"/>
+                                    <constraint firstAttribute="trailing" secondItem="y3A-pY-otB" secondAttribute="trailing" id="N3L-f5-Xjk"/>
+                                    <constraint firstAttribute="centerX" secondItem="ocG-Dt-6Bg" secondAttribute="centerX" id="NNL-mP-y7H"/>
+                                    <constraint firstItem="42h-1R-UoX" firstAttribute="leading" secondItem="4lT-C8-76B" secondAttribute="leading" id="Oh2-3T-cyE"/>
+                                    <constraint firstAttribute="centerX" secondItem="Ehd-0q-MGM" secondAttribute="centerX" id="OlQ-Ca-P7I"/>
+                                    <constraint firstItem="y3A-pY-otB" firstAttribute="leading" secondItem="4lT-C8-76B" secondAttribute="leading" id="UnF-HM-YeO"/>
+                                    <constraint firstItem="y3A-pY-otB" firstAttribute="top" secondItem="4lT-C8-76B" secondAttribute="top" id="UsI-rj-r53"/>
+                                    <constraint firstAttribute="centerY" secondItem="dnj-Ej-xO2" secondAttribute="centerY" id="XjM-CF-t6Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bmm-SN-p57" secondAttribute="bottom" id="bLv-Zp-Fa3"/>
+                                    <constraint firstItem="3bV-nj-C5I" firstAttribute="leading" secondItem="4lT-C8-76B" secondAttribute="leading" id="cU4-Fx-pEF"/>
+                                    <constraint firstItem="Bmm-SN-p57" firstAttribute="leading" secondItem="4lT-C8-76B" secondAttribute="leading" id="hXq-SX-8WA"/>
+                                    <constraint firstItem="Ehd-0q-MGM" firstAttribute="top" secondItem="4lT-C8-76B" secondAttribute="top" id="jR0-gR-DCV"/>
+                                    <constraint firstAttribute="trailing" secondItem="uKH-Hs-PJk" secondAttribute="trailing" id="sE2-on-mLL"/>
+                                    <constraint firstItem="42h-1R-UoX" firstAttribute="top" secondItem="4lT-C8-76B" secondAttribute="top" id="u1o-uG-Ef9"/>
+                                    <constraint firstAttribute="trailing" secondItem="yEK-fA-25c" secondAttribute="trailing" id="zqu-rg-jsg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTi-wL-03Q">
+                                <rect key="frame" x="140" y="86" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkF-Ar-yuT">
+                                <rect key="frame" x="460" y="544" width="120" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="忘记手势密码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgetPassword:" destination="pLa-NN-w8p" eventType="touchUpInside" id="9vi-7X-8R9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48855573769999999" green="1" blue="0.45461177790000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4lT-C8-76B" firstAttribute="top" secondItem="eTi-wL-03Q" secondAttribute="bottom" constant="30" id="2W2-gi-JP9"/>
+                            <constraint firstAttribute="trailing" secondItem="RkF-Ar-yuT" secondAttribute="trailing" constant="20" id="4ew-m7-y2r"/>
+                            <constraint firstItem="eTi-wL-03Q" firstAttribute="leading" secondItem="4lT-C8-76B" secondAttribute="leading" id="Wkn-g8-0Lg"/>
+                            <constraint firstItem="LBp-WX-T2o" firstAttribute="top" secondItem="RkF-Ar-yuT" secondAttribute="bottom" constant="20" id="b80-jP-IIh"/>
+                            <constraint firstAttribute="centerY" secondItem="4lT-C8-76B" secondAttribute="centerY" id="dvB-eV-e6t"/>
+                            <constraint firstAttribute="centerX" secondItem="4lT-C8-76B" secondAttribute="centerX" id="mHA-x9-qgH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gesturePassTip" destination="eTi-wL-03Q" id="sj6-d0-5bj"/>
+                        <outlet property="gesturePasswordBackView" destination="4lT-C8-76B" id="X9P-Rw-pJu"/>
+                        <outlet property="gesturePasswordForeView" destination="y3A-pY-otB" id="Sgd-z5-CDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoA-mi-nbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="307"/>
+        </scene>
+    </scenes>
+</document>

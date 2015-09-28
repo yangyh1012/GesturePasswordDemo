@@ -1,0 +1,10 @@
+
+*.xcuserstate
+
+*.xcscheme
+
+*.xcworkspacedata
+
+GesturePasswordDemo.xcodeproj/xcuserdata/yangyihui.xcuserdatad/xcschemes/xcschememanagement.plist
+
+GesturePasswordDemo.xcodeproj/xcuserdata/yangyihui.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
