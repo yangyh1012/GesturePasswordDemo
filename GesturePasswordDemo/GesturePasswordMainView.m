@@ -27,6 +27,7 @@
                                 gradient,
                                 CGPointMake(0.0,0.0) ,CGPointMake(0.0,self.frame.size.height),
                                 kCGGradientDrawsBeforeStartLocation);
+    CGGradientRelease(gradient);
 }
 
 @end
